@@ -1,0 +1,1 @@
+local replicatedStorage = game.ReplicatedStorage
