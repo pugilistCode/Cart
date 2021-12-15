@@ -1,5 +1,6 @@
 -- Currently does not replicate to other clients
 -- Would need to make the characters invisible to other clients, or replicate the cart
+-- What if a player needs to be taken out of the cart? Or wants it to end? Add a function for this
 
 local cart = {}
 
@@ -80,6 +81,7 @@ function cart.start()
 	--local tween = tweenService:Create(player.PlayerGui.ScreenGui.Frame, TweenInfo.new(0.3, Enum.EasingStyle.Back, Enum.EasingDirection.In), {BackgroundTransparency = 0}):Play()
 	--tween.Completed:Wait()
 	usingCart:Destroy()
+    usingCart = nil
 end
 
 -- Will load the cart at every node, so we can see how it fits onto each point in the track
